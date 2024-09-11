@@ -14,7 +14,6 @@ class QType(enum.Enum):
     UNIQUE  = 0
     STUDIED = 1
     RANDOM  = 2
-
     UNDEFINED = -1
 
 
@@ -134,6 +133,7 @@ class MainWindow(QMainWindow):
 
     def getNextKey(self):
         unstudiedSet = self.uniqueKeys.difference(self.studiedWords)
+        unstudiedPostFix = f" Unstudied {len(unstudiedSet)}"
         if self.isTimeToUnique():
             if len(unstudiedSet) == 0:
                 self.reinitUniqueKeys()
@@ -141,16 +141,16 @@ class MainWindow(QMainWindow):
             qKey = choice(list(unstudiedSet))
             qType = QType.UNIQUE
             self.uniqueKeys.remove(qKey)
-            self.setWindowTitle("unique")
+            self.setWindowTitle(f"unique {unstudiedPostFix}")
         else:
             if self.timeToRepeatStudied():
                 qKey  = choice(list(self.studiedWords))
                 qType = QType.STUDIED
-                self.setWindowTitle("studied")
+                self.setWindowTitle(f"studied {unstudiedPostFix}")
             else:
                 qKey  = choice(list(set(self.allKeys).difference(self.studiedWords)))
                 qType = QType.RANDOM
-                self.setWindowTitle("random")
+                self.setWindowTitle(f"random {unstudiedPostFix}")
         return qKey, qType
 
     def retranslateUI(self):

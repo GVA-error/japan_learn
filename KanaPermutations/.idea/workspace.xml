@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c89c2bb2-ed7e-45b4-abcb-ea8827697065" name="Default Changelist" comment="" />
+    <list default="true" id="c89c2bb2-ed7e-45b4-abcb-ea8827697065" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduls/kangi_words.py" beforeDir="false" afterPath="$PROJECT_DIR$/moduls/kangi_words.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduls/widgets/mainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/moduls/widgets/mainWindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studied.words" beforeDir="false" afterPath="$PROJECT_DIR$/studied.words" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +22,15 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="2cg3g29dyim5sMV6A8xEm2FI9NW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/main.py" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -72,12 +85,33 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/moduls/kangi_words.py</url>
+          <line>343</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="string.replace(string[i], JEH.RAMANZI_DICT[c])" language="Python" />
-        <watch expression="list(string)" language="Python" />
-        <watch expression="event.key()" language="Python" />
+        <watch expression="len(KANZI_WITH_LOVE_N5)" language="Python" />
+        <watch expression="len(list(self.studiedWords))" language="Python" />
       </configuration>
     </watches-manager>
   </component>

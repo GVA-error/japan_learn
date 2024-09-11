@@ -20,6 +20,16 @@ PATH_TO_STUDIED_KEYS = "studied.words"
 # Какой EDU режим использовать.
 CUR_REGIM = EDU.KANGI_SENTENCE_CARDS
 
+# Какую тему я решаю сегодня по проге
+import random
+from datetime import datetime
+random.seed(datetime.now().timestamp())
+
+print(random.choice(["Array / String","Two Pointers","Sliding Window","Matrix","Hashmap","Intervals","Stack", \
+                     "Linked List","Binary Tree General","Binary Tree BFS" ,"Graph General", \
+                     "Graph BFS","Trie","Backtracking", "Binary Search", \
+                     "Heap","Bit Manipulation","Math","1D DP","Multidimensional DP"]))
+
 if CUR_REGIM == EDU.HIRAGANA_BY_HEART:
     JEH.EDU_HiraganaByHeart()
 if CUR_REGIM == EDU.ROMANZY_GENERATE:
