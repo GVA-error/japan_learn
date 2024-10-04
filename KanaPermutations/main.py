@@ -26,8 +26,8 @@ from datetime import datetime
 random.seed(datetime.now().timestamp())
 
 print(random.choice(["Array / String","Two Pointers","Sliding Window","Matrix","Hashmap","Intervals","Stack", \
-                     "Linked List","Binary Tree General","Binary Tree BFS" ,"Graph General", \
-                     "Graph BFS","Trie","Backtracking", "Binary Search", \
+                     "Linked List","Binary Tree General","Binary Tree BFS", "Binary Search Tree" ,"Graph General", \
+                     "Graph BFS","Trie","Backtracking", "Divide & Conquer", "Kadane's Algorithm", "Binary Search", \
                      "Heap","Bit Manipulation","Math","1D DP","Multidimensional DP"]))
 
 if CUR_REGIM == EDU.HIRAGANA_BY_HEART:
