@@ -18,7 +18,7 @@ kangiTopBound = None # По умолчанию None. Верхняя границ
 PATH_TO_STUDIED_KEYS = "studied.words"
 
 # Какой EDU режим использовать.
-CUR_REGIM = EDU.KANGI_SENTENCE_CARDS
+CUR_REGIM = EDU.VIDEO_DOWNLOAD
 
 # Какую тему я решаю сегодня по проге
 import random
